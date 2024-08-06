@@ -1,0 +1,667 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #06202a;
+  color: #fff;
+  font-family: Noto Sans;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* .container {
+  width: 1200px;
+  padding: 0px 12px;
+  margin: 0px auto;
+} */
+header {
+  width: 100%;
+  position: absolute;
+  padding: 16px 0px;
+}
+.headr-row {
+  display: flex;
+  column-gap: 40px;
+  align-items: center;
+}
+.header-content {
+  width: 100%;
+}
+.header-top ul,
+.header-bottom ul {
+  display: flex;
+  justify-content: flex-end;
+  grid-column-gap: 3.75rem;
+  padding: 8px 0px;
+  list-style: none;
+}
+.header-top a:hover {
+  color: #ffffff;
+}
+
+header nav a {
+  color: #e1e1e1;
+  font-size: 1rem;
+}
+header nav i {
+  margin: 0px 12px;
+}
+
+.banner {
+  height: 100vh;
+
+  background-image: url(../img/626bb96aafa0c50f5737144b_home-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+
+  align-items: center;
+}
+
+.banner-text {
+  width: 50%;
+  margin-left: auto;
+  padding-top: 130px;
+}
+.banner-text h2 {
+  font-size: 72px;
+  font-family: Rajdhani;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.banner-text p {
+  font-size: 16px;
+  font-family: Noto Sans;
+  line-height: 1.75;
+  font-weight: 400;
+  color: #e1e1e1;
+}
+.banner .banner-btn {
+  display: flex;
+  column-gap: 16px;
+  margin-top: 36px;
+}
+.services {
+  padding: 40px 0px;
+}
+.services .services-list {
+  display: flex;
+
+  column-gap: 50px;
+  /* transform: translateY(-150px); */
+}
+.services .services-item {
+  width: calc(100% / 3);
+  overflow: hidden;
+}
+.services-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.services-item {
+  height: 450px;
+  position: relative;
+}
+
+.services-item .services-text {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #06202a;
+  padding-top: 16px;
+  font-family: Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  transition: 0.5s;
+}
+
+.services-item:hover img {
+  scale: 1.2;
+}
+.services-item:hover .services-text {
+  background-color: transparent;
+  z-index: 2;
+  padding: 20px 20px;
+}
+
+.services-item:hover::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #06202a, transparent);
+}
+.services-item h4 {
+  margin-bottom: 12px;
+}
+.welcome {
+  display: flex;
+  height: 510px;
+  background-image: linear-gradient(270deg, #06202a 40%, rgba(255, 255, 255, 0)),
+    url(../img/63238012cfd4bd6e13d2ea12_Welcome\ to\ RISE\ Home\ -\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.welcome-text {
+  width: 50%;
+  margin-left: auto;
+  line-height: 1.75;
+}
+
+.welcome-btn {
+  display: flex;
+  padding-top: 40px;
+  column-gap: 30px;
+}
+.welcome-text h2 {
+  margin-bottom: 1rem;
+  font-family: Rajdhani, sans-serif;
+  font-size: 2.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+.communiyt {
+  box-sizing: border-box;
+  padding: 200px 0px;
+}
+
+.community-conainer {
+  display: flex;
+  column-gap: 150px;
+
+  justify-content: space-between;
+}
+.fitness {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  width: 50%;
+  cursor: pointer;
+  justify-content: space-between;
+}
+.fitness p {
+  display: flex;
+  gap: 40px;
+
+  align-items: center;
+}
+.fitness h1 {
+  color: #e1e1e1;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Rajdhani, sans-serif;
+  font-size: 4.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.athlete {
+  background-image: linear-gradient(
+      rgba(6, 32, 42, 0.84),
+      rgba(6, 32, 42, 0.84)
+    ),
+    url(../img/63238012cfd4bd6e13d2ea12_Welcome\ to\ RISE\ Home\ -\ 1.jpg);
+  width: 50%;
+  height: 574px;
+  position: relative;
+  padding: 3.1875rem 3.1875rem 6.3125rem;
+
+  row-gap: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.athlete h3 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Rajdhani, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.athlete p {
+  margin-bottom: 1.5rem;
+}
+.athlete ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.img-1 img {
+  position: absolute;
+  width: 254px;
+  height: 339px;
+  left: 350px;
+  top: 300px;
+
+  display: flex;
+  object-fit: cover;
+}
+
+.communiyt hr {
+  border: 1px solid #0b6285;
+}
+.portfolios {
+  padding: 40px 0px;
+}
+.portfolios .portfolio-header {
+  font-size: 40px;
+  text-align: center;
+}
+.portfolio-list {
+  padding: 24px 0px;
+  width: 70%;
+  /* background-color: red; */
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.portfolio-list::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  width: 1200px;
+  height: 1px;
+  transform: translateX(-15%);
+  background-color: #738085;
+}
+.portfolio-list span {
+  position: relative;
+  z-index: 2;
+  padding: 15px 20px;
+  background-color: #06202a;
+  border: 1px solid #06202a;
+  color: #738085;
+}
+.portfolio-list span:hover,
+.portfolio-list .active {
+  border: 1px solid #738085;
+  color: #e1e1e1;
+}
+.portfolio-list span:hover:after,
+.portfolio-list .active::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 18%;
+  width: 60%;
+  height: 140%;
+  z-index: -1;
+  background-color: #06202a;
+}
+.portfolio-list span:hover:before,
+.portfolio-list .active::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  width: 130%;
+  height: 30px;
+  transform: translateY(-50%);
+  z-index: -1;
+
+  background-color: #06202a;
+}
+.portfolio-container {
+  padding: 40px 0px;
+  display: flex;
+  gap: 50px;
+}
+.portfolio-img img {
+  width: 645px;
+  height: 400px;
+
+  object-fit: cover;
+}
+.portfolio-text h3 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Rajdhani, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.portfolio-text p {
+  width: 100%;
+  font-family: Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+}
+.medium-section {
+  height: 650px;
+  background-image: linear-gradient(
+      to right,
+      rgba(6, 32, 42, 0.74) 25%,
+      rgba(255, 255, 255, 0)
+    ),
+    url(../img/631f7fc235c7063366789365_Rise-Inside-Gym.png);
+  background-position: 0 0, 50%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.medium-container {
+  width: 533px;
+  display: flex;
+  transform: translateX(-350px);
+  flex-direction: column;
+}
+
+.medium-text h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Rajdhani, sans-serif;
+  font-size: 2.625rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.medium-text p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  padding-bottom: 20px;
+}
+.medium-text a {
+  display: inline-block;
+}
+.card-section {
+  padding: 150px 0px;
+}
+.card-section .card-headr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-section h1 {
+  color: #e1e1e1;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Rajdhani, sans-serif;
+  font-size: 4.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.card-1 {
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+
+  width: 385px;
+  height: 570px;
+  background-image: radial-gradient(
+      circle,
+      rgba(6, 32, 43, 0.89) 21%,
+      rgba(6, 32, 43, 0.71) 53%,
+      rgba(6, 32, 43, 0.38)
+    ),
+    url(../img/62723e954c4e9c78137be318_testimonial-background.jpg);
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+
+  justify-content: space-between;
+}
+.card-star img {
+  padding-bottom: 20px;
+}
+.card-star p {
+  color: #e1e1e1;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.75;
+  font-family: Noto Sans, sans-serif;
+}
+.contact {
+  padding: 60px 0px 100px;
+}
+.contact .contact-list {
+  display: flex;
+  justify-content: space-between;
+}
+.contact .contact-info {
+  width: 30%;
+}
+.contact .contact-form {
+  width: 50%;
+}
+.contact-form input {
+  width: 100%;
+  display: block;
+  margin-bottom: 24px;
+}
+.contact-form input,
+.contact-form textarea {
+  font-size: 18px;
+  padding: 8px 12px;
+  outline: none;
+  border-radius: 4px;
+}
+.contact-form textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: vertical;
+
+  margin-bottom: 24px;
+}
+.contact-title {
+  font-family: Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #e1e1e1;
+  margin-bottom: 16px;
+}
+
+.contact-info h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Rajdhani, sans-serif;
+  font-size: 4.6rem;
+  font-weight: 600;
+  line-height: 1.1;
+  color: white;
+  margin-bottom: 32px;
+}
+.contact-info p {
+  font-family: Noto Sans, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.75;
+  color: #e1e1e1;
+}
+.contact-info address {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  color: #e1e1e1;
+  margin-top: 32px;
+}
+.contact-info address i {
+  margin-right: 12px;
+}
+footer {
+  background-color: #0b3d50;
+  padding-top: 50px;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px 0px 64px;
+}
+.footer-top img {
+  width: 86px;
+}
+.footer-top ul {
+  margin-top: 24px;
+  display: flex;
+  list-style: none;
+  column-gap: 12px;
+}
+.footer-top ul a {
+  font-size: 14px;
+  color: #b8e4f5;
+  transition: 0.1s;
+}
+.footer-top ul a:hover {
+  color: white;
+}
+.footer-top-form h4 {
+  color: #e1e1e1;
+  margin-bottom: 12px;
+}
+.footer-top-form form input {
+  outline: none;
+  font-size: 18px;
+  padding: 0px 12px;
+}
+.footer-top-form form {
+  display: flex;
+  column-gap: 24px;
+}
+.footer-end {
+  padding: 12px 0px;
+  background-color: #06202a;
+  text-align: center;
+  margin-top: 90px;
+}
+.footer-end a {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.footer-end img {
+  width: 90px;
+}
+
+@media screen and (max-width: 970px) {
+  .header {
+    position: fixed;
+    background-color: #06202a;
+    top: 0px;
+
+    z-index: 10000;
+  }
+  .header-content {
+    display: none;
+  }
+  .headr-row {
+    justify-content: space-between;
+  }
+  .banner {
+    height: 120vh;
+  }
+
+  .banner-text {
+    width: 90%;
+    margin: 0px auto;
+  }
+  .header-bar {
+    font-size: 40px;
+  }
+  .community-conainer {
+    flex-direction: column;
+  }
+  .fitness {
+    width: 100%;
+  }
+  .athlete {
+    display: flex;
+    
+    width: 100%;
+    top: 100px;
+  }
+  .welcome-text,
+  .welcome-btn {
+    margin: 0px auto;
+  }
+  .welcome {
+    background-color: linear-gradient(270deg, #0b3d50, rgba(6, 32, 42, 0.8));
+  }
+  .banner-text h2 br {
+    display: none;
+  }
+  .medium-section {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .banner-text {
+    width: 90%;
+    margin: 0px auto;
+  }
+
+  .banner .banner-btn {
+    flex-direction: column;
+  }
+  .services .services-list {
+    flex-direction: column;
+    row-gap: 60px;
+  }
+  .services .services-item {
+    width: 100%;
+  }
+  .services-item .services-text {
+    width: 100%;
+    font-family: Noto Sans, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.75;
+  }
+
+  .welcome {
+    width: 100%;
+  }
+  .welcome-text,
+  .welcome-btn {
+    width: 100%;
+    flex-direction: column;
+  }
+ 
+}
